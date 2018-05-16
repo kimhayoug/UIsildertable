@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var myslider: UISlider!
+    @IBOutlet weak var mylabel: UILabel!
     @IBOutlet weak var mytabelview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func sliderMoved(_ sender: Any) {
         
         print("slider vlaue = \(Int(myslider.value ))")
-        
         
         mytabelview.reloadData()
     }
